@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tim Wang</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Tim Wang</h1>
+      <button onclick="toggleLightDark()" style="border: 0; background: transparent">
+        <img src="images/darkmode.svg" alt="Toggle light/dark mode" class="headerbutton recolor",>
+      </button>
+      <a href="mailto:wang.tim@northeastern.edu", class="headitem">
+        <img src="images/envelope.svg" alt="Send me an email" class="headerbutton recolor">
+      </a>
+      <a href="https://github.com/timaeusx", class="headitem">
+        <img src="images/github-mark.svg" alt="See code on GitHub" class="headerbutton recolor">
+      </a>
+      <a href="https://www.linkedin.com/in/timaeusx/" class="headitem">
+        <img src="images/in.svg" alt="Connect on LinkedIn", class="headerbutton recolor">
+      </a>
+    </header>
+    <span></span>
+    <p>Data science and mathematics student at Northeastern University.</p>
+    <p>
+      My interests lie in understanding, visualizing, and processing large datasets quickly, efficiently, and comprehensively.
+      I currently work on the Bioinformatics and Computational Biology team at <a href="https://dembiopharma.com">DEM BioPharma</a>,
+      where we work to derive insights from high-throughput RNA sequencing (RNA-Seq) and CRISPR screening data from multi-armed experiments.
+    </p>
+    <p>Previously, I worked at the <a href="https://www.broadinstitute.org">Broad Institute of Harvard and MIT</a> Data Sciences Platform as a software engineer,
+      helping with the day to day testing of improvements to production-grade high-throughput sequencing data processing pipelines.</p>
+  
+    <div class="tab">
+      <button class="tablinks" onclick="switchTab(event, 'news')" id="default">News and Updates</button>
+      <button class="tablinks" onclick="switchTab(event, 'experience')">Experience</button>
+      <button class="tablinks" onclick="switchTab(event, 'projects')">Projects</button>
+      <button class="tablinks" onclick="switchTab(event, 'coursework')">Coursework</button>
+    </div>
+
+    <div id="news" class="tabcontent">
+      <h2>2024/01/26</h2>
+      <p>This site was made for a data visualization course! Things that might be fun to add later:</p>
+      <ul>
+        <li>Light mode</li>
+        <li>Embedded things like GitHub commits or LinkedIn posts</li>
+        <li>Link to public calendar whenever that gets made</li>
+      </ul>
+      
+    </div>
+
+    <div id="experience" class="tabcontent">
+      <h2>Bioinformatics & Computational Biology Co-op, DEM Biopharma</h2>
+        <ul>
+          <li>Containerize custom bioinformatics analysis tools to facilitate pipeline migration to AWS Batch</li>
+          <li>Perform statistical validation of quality control metrics for newly migrated pipelines to ensure accuracy/li>
+          <li>Design static and interactive visualization notebooks for downstream analysis of pipeline outputs</li>
+          <li>Create ad-hoc data processing and analysis scripts for speeding up menial tasks for other teams</li>
+        </ul>
+      <h2>Software Engineering Co-op, Broad Institute of Harvard and MIT</h2>
+        <ul>
+          <li>Maintained scalable analysis pipelines for processing high-throughput sequencing data</li>
+          <li>Standardized Docker images and infrastructure for scientific tools to align with best practices</li>
+          <li>Monitored and addressed periodic security vulnerability (CVE) scans in Docker images</li>
+          <li>Productionized Jupyter notebook analysis steps into reusable command line scripts</li>
+        </ul>
+    </div>
+
+    <div id="projects" class="tabcontent">
+      <h2>Classifying Acute Leukemia, on
+        <a href="https://github.com/timaeusx/ds4400-gene-expression">
+          GitHub
+        </a>
+      </h2>
+      <ul>
+        <li>Used pre-normalized gene expression data to predict Acute Myeloid/Lymphocytic Leukemia</li>
+        <li>Compared logistic regression, random forest, KNN models, and a dense neural network for accuracy</li>
+        <li>Achieved 97\% accuracy with the logistic regression model, trained on only 72 data points</li>
+      </ul>
+
+      <h2>Bootstrap Percolation Algorithms, an
+        <a href="https://sites.google.com/view/rtg-northeastern/undergraduate/independent-research-experience#h.p_RqxDFK92pG3b">
+          NSF-funded REU
+        </a>
+      </h2>
+      <ul>
+        <li>Implemented a basic percolation process in Python for large, randomly generated graphs</li>
+        <li>Conducted empirical investigation of algorithms presented by leading papers in the field</li>
+        <li>Developed a custom percolation algorithm, improving performance on certain  classes of graphs</li>
+      </ul>
+
+      <h2>Predicting Logan Airport Delays, on
+        <a href="https://github.com/timaeusx/ds3000-logan-arrival-trends">
+          GitHub
+        </a>
+      </h2>
+      <ul>
+        <li>Investigated relationships between weather conditions and arrival delays at Boston Logan Airport</li>
+        <li>Visualized feature/outcome variable relationships in US Department of Transportation data</li>
+        <li>Optimized and compared Ridge, Lasso, and Linear regression algorithms for delay prediction</li>
+      </ul>
+
+      <h2>Transit Ticketing Database, on
+        <a href="https://github.com/timaeusx/cs3200-transit-ticketing">
+          GitHub
+        </a>
+      </h2>
+      <ul>
+        <li>Designed a relational database schema to model a public transit fare system</li>
+        <li>Integrated data model with a CRUD-operable backend and React-based web interface</li>
+      </ul>
+    </div>
+
+    <div id="coursework" class="tabcontent">
+      <h2>In-progress</h2>
+      <ul>
+        <li>Advanced Linear Algebra</li>
+        <li>Algorithms and Data</li>
+        <li>Data Visualization and Information Presentation</li>
+        <li>Practical Neural Networks</li>
+      </ul>
+
+      <h2>Completed (not exhaustive)</h2>
+      <ul>
+        <li>Machine Learning and Data Mining 1</li>
+        <li>Large Scale Storage and Retrieval</li>
+        <li>Database Design</li>
+        <li>Object-Oriented Design</li>
+        <li>Advanced Group Theory</li>
+        <li>Complex Variables</li>
+        <li>Statistics & Stochastic Processes</li>
+        <li>Dynamical Systems</li>
+        <li>Real Analysis</li>
+      </ul>
+    </div>
+  
+  </body>
+  <script src="scripts/main.js"></script>
+</html>
